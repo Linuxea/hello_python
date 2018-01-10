@@ -25,7 +25,7 @@ while True:
         while True:
             try:
                 data = client_socket.recv(BUFSIZE)
-                print("%s data:" %(data))
+                print("data: %s" %(data))
                 if not data:
                     break
                 # re = bytes("%si have receive:%s" % (time.ctime(), data), encoding = "utf8") 
