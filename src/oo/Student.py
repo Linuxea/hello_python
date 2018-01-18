@@ -14,6 +14,6 @@ class Student(object):
         print("score: %s" % self.score)
 
 
-stu = Student('linuxea', 199)
-stu.get_name()
-stu.get_score()
+# stu = Student('linuxea', 199)
+# stu.get_name()
+# stu.get_score()
