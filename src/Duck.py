@@ -12,7 +12,7 @@ class Pig(Animal) :
     pass
 
 
-class Orange():
+class Orange:
     def talk(self):
         print("I am a orange")
 

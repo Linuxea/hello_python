@@ -1,6 +1,7 @@
 import threading
 from time import sleep
 
+
 def main():
     print("current thread is: %s" % (threading.current_thread().name))
     thread1 = threading.Thread(target=goOne, name="goone")
@@ -10,11 +11,11 @@ def main():
     thread1.join()
     thread2.join()
 
+
 def goOne():
     while True:
         print("i am go one")
         sleep(1)
-
 
 
 def goTwo():

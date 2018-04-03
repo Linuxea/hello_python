@@ -1,6 +1,6 @@
 
 """ python map """
-result = map(lambda x : x *x, range(1,10))
+result = map(lambda x: x * x, range(1, 10))
 
 
 """ javascript map """

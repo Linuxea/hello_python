@@ -1,9 +1,9 @@
 import json
 
 stu = {
-    "name" : "linuxea",
-    "age" : 13,
-    "hobby" : [
+    "name": "linuxea",
+    "age": 13,
+    "hobby": [
         "footall", "basketball", "pingpong"
     ]
 }

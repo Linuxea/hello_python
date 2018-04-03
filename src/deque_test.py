@@ -1,8 +1,7 @@
 from collections import deque
 
-
 """ 参数数组 """
-de = deque([1,2,3])
+de = deque([1, 2, 3])
 
 print(de)
 

@@ -1,18 +1,19 @@
 class Student(object):
 
+    def __init__(self, value):
+        self._score = value
 
     @property
     def score(self):
         return self._score
-    
+
     @score.setter
     def set_score(self, value):
         if not isinstance(value, (int, float)):
             raise ValueError('分数需要为数字')
-        self._score = value
+
 
 s = Student()
-
 
 # old way
 # s.set_score(123)

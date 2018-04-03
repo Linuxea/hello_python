@@ -1,8 +1,7 @@
+""" a tcp socket server """
 
-''' a tcp socket server '''
-
-from socket import *
 import time
+from socket import *
 
 HOST = '127.0.0.1'
 PORT = 21567
@@ -25,12 +24,12 @@ while True:
         while True:
             try:
                 data = client_socket.recv(BUFSIZE)
-                print("data: %s" %(data))
+                print("data: %s" % (data))
                 if not data:
                     break
                 # re = bytes("%si have receive:%s" % (time.ctime(), data), encoding = "utf8") 
-                re = bytes('ok', encoding = "utf8")
-                print("返回消息预览:%s" %(re))
+                re = bytes('ok', encoding="utf8")
+                print("返回消息预览:%s" % re)
                 client_socket.send(re)
             except Exception as e:
                 print("%s" % e)
@@ -38,7 +37,7 @@ while True:
             finally:
                 client_socket.close()
 
-    except Exception as e :
+    except Exception as e:
         print("%s" % e)
         server_socket.close()
         time.sleep(5)
