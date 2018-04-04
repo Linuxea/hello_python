@@ -1,0 +1,6 @@
+{
+  "Duck.py::test": true,
+  "datetime_test.py": true,
+  "input_test.py": true,
+  "oo/property_test.py": true
+}

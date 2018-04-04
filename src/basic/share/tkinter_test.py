@@ -2,8 +2,9 @@
 
 
 
-from tkinter import *
 import tkinter.messagebox as messagebox
+from tkinter import *
+
 
 class Application(Frame):
     def __init__(self, master=None):
