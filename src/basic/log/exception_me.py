@@ -11,10 +11,10 @@ def exception_test():
 异常日志记录测试
     """
     try:
-        i = 1 / "abc"
+        i = 1 / 0
         print(i)
     except Exception as e:
-        logging.error(e)
+        logging.exception(e)
     finally:
         print("try-exception-finally")
 
