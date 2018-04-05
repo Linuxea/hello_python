@@ -4,8 +4,14 @@
 # 因此，线程之间共享数据最大的危险在于多个线程同时改一个变量，把内容给改乱了。
 import threading
 
+import time
+
 total = 0
 
+
+def opt_total():
+    add_me()
+    sub_me()
 
 def add_me():
     global total
@@ -24,14 +30,11 @@ def print_total():
 
 if __name__ == '__main__':
     threads = []
-    for i in range(1234):
-        t1 = threading.Thread(target=add_me)
+    for i in range(12324):
+        t1 = threading.Thread(target=opt_total)
         threads.append(t1)
-
-        t2 = threading.Thread(target=sub_me)
-        threads.append(t2)
-
+    print_total()
     for i in threads:
         i.start()
-        i.join()
+    time.sleep(5)
     print_total()
