@@ -1,0 +1,5 @@
+INFO:root:这是一条 info 级别的日志
+DEBUG:root:这是一条 debug 级别的日志
+WARNING:root:这是一条 warning 级别的日志
+ERROR:root:这是一条 error 级别的日志
+CRITICAL:root:这是一条 fatal 级别的日志
