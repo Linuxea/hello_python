@@ -1,0 +1,2 @@
+ERROR:root:division by zero
+ERROR:root:unsupported operand type(s) for /: 'int' and 'str'
